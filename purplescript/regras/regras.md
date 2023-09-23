@@ -7,6 +7,8 @@ ___
 
 * todo comando começa com uma barra "/".
 
+* toda contagem se inicia com 0.
+
 ## regras das variáveis:
 
 * nomes de variáveis não devem COMEÇAR com números

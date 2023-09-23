@@ -55,3 +55,90 @@ esse limite é definido pelo parâmetro times:
     /write "Olá";
 }
 ```
+
+___
+
+## /search
+
+o search significa "pesquisar". e é exatamente isso que ele faz.
+
+ele pesquisa por coisas dentro de algo.
+
+entre vários usos, está em procurar por uma letra ou palavra, por exemplo, dentro de uma string:
+
+```
+v.estado = "Rio de Janeiro";
+/search for:'o', in:estado
+```
+
+nesse exemplo acima vemos dois parâmetros: o for e o in.
+
+o parâmetro for é o que vamos pesquisar;
+
+E o in é onde vamos pesquisar.
+
+Nesse caso, vamos pesquisar a letra "r" dentro da string da variável estado.
+
+também podemos usar o parâmetro position caso tenha mais de uma letra dentro de uma string:
+
+```
+/search for:'o', in:estado, position:1;
+```
+
+nesse caso ele vai pegar a segunda letra "o" de "Rio de Janeiro".
+
+IMPORTANTE! A capitalização das letras fazem muita diferença.
+
+se formos procurar por "r" em "Rio de Janeiro", vamos encontrar o último "r" na palavra "Janeiro".
+
+Já se procurarmos por "R", vamos encontrar o primeiro "R" na palavra "Rio".
+
+___
+
+Outra forma de usar o search é fazendo o oposto de procurar a posição com a letra.
+
+Podemos procurar a letra pela posição, sem se preocupar com qual letra queremos pegar. para isso, não usamos o for, apenas o in e o position:
+
+```
+/search position:8, in:estado;
+```
+
+nesse caso ele vai retornar o valo "a" que é o 9° caractere (Já que os espaços também contam).
+
+### Valores do position
+
+Alguns outros valores além de números que podemos dar ao parâmetro position são:
+
+first: procura pelo primeiro caractere ou conjunto de caracteres (mesma coisa que a posição 0)
+
+last: procura pelo último caractere ou conjunto de caracteres
+
+___
+
+Vamos atribuir a posição de um caractere ou o caractere em si à uma variável:
+
+```
+v.letra = /search for:"o", in:estado, position:1;
+/write letra
+```
+
+resultado:
+```
+"o"
+```
+
+também podemos procurar por apenas uma letra e ver na tela qual posição ela está:
+
+```
+v.letra = /search for:"d", in:estado;
+/write letra-position
+```
+
+resultado:
+
+```
+4
+```
+
+o -position é um modificador que procurará pela posição do caractere retornado para a variável letra. ou seja, 4.
+
