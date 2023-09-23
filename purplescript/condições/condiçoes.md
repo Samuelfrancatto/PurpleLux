@@ -16,7 +16,7 @@ exemplo:
 
 ```
 >>> v.num = 24;
->>> /if v.num == 24 {
+>>> /if num == 24 {
         /write "true";
 };
 ```
@@ -31,7 +31,7 @@ exemplo:
 
 ```
 >>> v.num = 8;
->>> /if v.num == 8{
+>>> /if num == 8{
         /write "true";
 } /else{
         /write "false";
@@ -48,9 +48,9 @@ exemplo:
 
 ```
 >>> v.num = 10;
->>> /if v.num > 10{
+>>> /if num > 10{
         /write "Maior";
-} /else-if v.num < 10{
+} /else-if num < 10{
         /write "Menor";
 } /else{
         /write "Mesmo valor";

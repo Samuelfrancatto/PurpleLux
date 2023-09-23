@@ -12,11 +12,11 @@ se usa as abreviações dos tipos de dados para especificar o tipo do dado a ser
 Olá, Mundo!
 ```
 
-para escrever o valor que está dentro de uma variável, apenas adiciona na frente do /write o nome da variável junto vom o "v."
+Para usar o valor que está dentro de uma variável, se usa apenas o nome dela, sem o "v."
 
 ```
 >>> v.num = 5;
->>> /write v.num;
+>>> /write num;
 5
 ```
 
@@ -38,6 +38,20 @@ Para atribuir o valor da entrada do usuário à uma variável, é só declarar a
 ```
 >>> v.num = /input text: "Digite um número: ";
 Digite um número: 30
->>> /write v.num
+>>> /write num;
 30
+```
+
+___
+
+## /repeat
+
+o /repeat serve para repetir um código com um limite determinado.
+
+esse limite é definido pelo parâmetro times:
+
+```
+/repeat times: 5 {
+    /write "Olá";
+}
 ```
