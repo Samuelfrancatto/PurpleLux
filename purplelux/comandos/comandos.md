@@ -1,4 +1,4 @@
-# Lista de comandos do Purplescript
+# Lista de comandos do PurpleLux
 
 ## /write
 

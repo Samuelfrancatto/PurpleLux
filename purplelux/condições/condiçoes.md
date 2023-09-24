@@ -1,4 +1,4 @@
-# Condições em Purplescript
+# Condições em PurpleLux
 
 ## /if
 

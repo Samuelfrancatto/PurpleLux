@@ -1,4 +1,4 @@
-# Repetições em Purplescript
+# Repetições em PurpleLux
 
 ## /while
 

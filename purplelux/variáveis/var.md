@@ -1,6 +1,6 @@
 # Variáveis
 
-Para declarar uma variável em Purplescript, se usa "v." seguido do nome da variável.
+Para declarar uma variável em PurpleLux, se usa "v." seguido do nome da variável.
 
 E adicionamos um valor à ela com o sinal = e o valor logo em seguida.
 

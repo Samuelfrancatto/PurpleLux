@@ -1,6 +1,6 @@
 # Regras
 
-Essas são as regras do Purplescript
+Essas são as regras do PurpleLux
 ___
 
 * todo final do bloco de código deve ser fechado com ponto e vírgula ";".
