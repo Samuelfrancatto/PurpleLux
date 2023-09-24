@@ -142,3 +142,128 @@ resultado:
 
 o -position é um modificador que procurará pela posição do caractere retornado para a variável letra. ou seja, 4.
 
+# Comando para gerenciamento de arquivos e pastas:
+
+## /create-file
+
+Cria um arquivo em uma pasta especificada.
+
+parâmetros:
+
+name: nome do arquivo a ser criado.
+
+content: conteúdo do arquivo.
+
+dir: diretório onde o arquivo será criado.
+
+exemplo:
+
+```
+/create-file name:"arquivo.txt", content:"Conteúdo do arquivo", dir:"Pasta/do/arquivo/";
+```
+
+___
+
+## /copy-file
+
+copia um arquivo.
+
+parâmetros:
+
+file: especifica o arquivo a ser copiado.
+
+to: pasta onde o arquivo deverá ser copiado.
+
+exemplo:
+
+```
+/copy-file file:"arquivo.txt", to:"pasta/da/copia";
+```
+
+É importante dizer que se o diretório da cópia não for especificado, o arquivo será criado na mesma pasta que o arquivo original.
+
+___
+
+## /move-file
+
+move um arquivo para outra pasta.
+
+parâmetros:
+
+file: nome do arquivo a ser movido.
+
+to: diretório para qual o arquivo será movido.
+
+exemplo:
+
+```
+/move-file file:"arquivo.txt", to:"pasta/para/qual/o/arquivo/sera/movido";
+```
+
+___
+
+## /delete-file
+
+deleta um arquivo.
+
+parâmetros:
+
+file: nome do arquivo a ser excluído.
+
+exemplo:
+
+```
+/delete-file file:"arquivo.txt";
+```
+
+___
+
+## /create-folder
+
+cria uma pasta.
+
+parâmetros:
+
+name: nome da pasta a ser criada.
+
+dir: diretório onde a pasta será criada.
+
+exemplo:
+
+```
+/create-folder name:"Nova pasta", dir:"pasta/da/pasta"
+```
+
+___
+
+## /copy-folder
+
+copia uma pasta.
+
+parâmetros:
+
+folder: pasta a ser copiada.
+
+to: diretório para onde a pasta deverá ser copiada.
+
+___
+
+## /move-folder
+
+move uma pasta.
+
+parâmetros:
+
+folder: pasta a ser movida.
+
+to: diretório para onde a pasta será movida.
+
+___
+
+## /delete-folder
+
+deleta uma pasta.
+
+parâmetros:
+
+folder: pasta para ser excluída.
